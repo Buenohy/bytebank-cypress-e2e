@@ -1,70 +1,165 @@
-# Getting Started with Create React App
+# Bytebank - Cypress E2E Tests
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="right"><a href="#-descrição">Leia em Português</a></p>
 
-## Available Scripts
+![Project Screenshot](/src/assets/bytebank-cypress-e2e-screenshot-0.png)
 
-In the project directory, you can run:
+A project dedicated to End-to-End (E2E) testing for the Bytebank application, developed with **Cypress** and **JavaScript** to ensure the integrity of user flows and functionalities.
 
-### `npm start`
+## 📝 Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This repository contains a comprehensive suite of automated end-to-end tests for the Bytebank web application. Using Cypress, the tests simulate real user interactions to validate critical journeys, from initial registration and login to performing financial transactions and navigating the platform. The main goal is to guarantee the application's quality, stability, and reliability before deploying new features.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Key Features
 
-### `npm test`
+- Validation of login and registration forms.
+- Simulation of a complete user journey: login, transaction, and logout.
+- Tests for navigating between different pages of the application.
+- Responsiveness testing for mobile devices, including burger menu interactions.
+- Validation of success and error messages in user-facing forms.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technologies Used
 
-### `npm run build`
+![Cypress](https://img.shields.io/badge/Cypress-%23E5E5E5?logo=cypress&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the tests locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clone the repository**
 
-### `npm run eject`
+    ```bash
+    git clone https://github.com/Buenohy/bytebank-cypress-e2e.git
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.  **Navigate to the project directory**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    cd bytebank-cypress-e2e
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.  **Install dependencies**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm install
+    ```
 
-## Learn More
+4.  **Start the local server**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    You need to start both the API and the application in separate terminals.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    _Start the API:_
 
-### Code Splitting
+    ```bash
+    npm run api
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    _Start the application:_
 
-### Analyzing the Bundle Size
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    The application will be available at `http://localhost:3000`.
 
-### Making a Progressive Web App
+5.  **Run the Cypress tests**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    Open the Cypress Test Runner to execute the tests interactively.
 
-### Advanced Configuration
+    ```bash
+    npx cypress open
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👨‍💻 Author
 
-### Deployment
+- **Gabriel Bueno Hygino**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ⚖️ License
 
-### `npm run build` fails to minify
+This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for more details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+# Bytebank - Testes E2E com Cypress
+
+<p align="right"><a href="#-description">Read in English</a></p>
+
+![Screenshot do Projeto](/src/assets/bytebank-cypress-e2e-screenshot-0.png)
+
+Um projeto dedicado a testes End-to-End (E2E) para a aplicação Bytebank, desenvolvido com **Cypress** e **JavaScript** para garantir a integridade dos fluxos e funcionalidades do usuário.
+
+## 📝 Descrição
+
+Este repositório contém uma suíte completa de testes automatizados end-to-end para a aplicação web Bytebank. Utilizando Cypress, os testes simulam interações de usuários reais para validar jornadas críticas, desde o cadastro e login inicial até a realização de transações financeiras e a navegação pela plataforma. O objetivo principal é garantir a qualidade, estabilidade e confiabilidade da aplicação antes de implantar novas funcionalidades.
+
+## ✨ Principais Funcionalidades
+
+- Validação dos formulários de login e cadastro.
+- Simulação de uma jornada de usuário completa: login, transação e logout.
+- Testes para navegação entre diferentes páginas da aplicação.
+- Teste de responsividade para dispositivos móveis, incluindo interações com o menu hambúrguer.
+- Validação de mensagens de sucesso e erro nos formulários da aplicação.
+
+## 🛠️ Tecnologias Utilizadas
+
+![Cypress](https://img.shields.io/badge/Cypress-%23E5E5E5?logo=cypress&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+## 🚀 Como Executar
+
+Para executar os testes localmente, siga os passos abaixo:
+
+1.  **Clone o repositório**
+
+    ```bash
+    git clone https://github.com/Buenohy/bytebank-cypress-e2e.git
+    ```
+
+2.  **Navegue até o diretório do projeto**
+
+    ```bash
+    cd bytebank-cypress-e2e
+    ```
+
+3.  **Instale as dependências**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o servidor local**
+
+    Você precisa iniciar tanto a API quanto a aplicação em terminais separados.
+
+    _Inicie a API:_
+
+    ```bash
+    npm run api
+    ```
+
+    _Inicie a aplicação:_
+
+    ```bash
+    npm start
+    ```
+
+    A aplicação estará disponível em `http://localhost:3000`.
+
+5.  **Execute os testes do Cypress**
+
+    Abra o Cypress Test Runner para executar os testes de forma interativa.
+
+    ```bash
+    npx cypress open
+    ```
+
+## 👨‍💻 Autor
+
+- **Gabriel Bueno Hygino**
+
+## ⚖️ Licença
+
+Este projeto está licenciado sob a Licença ISC. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
